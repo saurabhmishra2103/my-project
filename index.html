@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC-Order</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body{
+            background-color: maroon;
+            color: black;
+            font-family: Arial;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../Public/images/kfctop.png" width="100%" height="400">
+    </header>
+        <div class="accordian" id="kfc">
+            <div class="accordian-item">
+                <div class="accordian-header">
+                    <button data-bs-target="#customer" data-bs-toggle="collapse" class="btn btn-danger w-100">Customer Details</button>
+
+                </div>
+                <div class="accordian-collapse collapse show" id="customer" data-bs-parent="#kfc">
+                    <div class="accordian-body">
+                        <dl>
+                            <dt>Customer Name</dt>
+                            <dd><input type="text" id="txtName" class="form-control"></dd>
+                            <dt>Mobile</dt>
+                            <dd><input type="text" id="txtMobile" class="form-control"></dd>
+                        </dl>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="accordian-item">
+                <div class="accordian-header">
+                    <button data-bs-target="#meal" data-bs-toggle="collapse" class="btn btn-danger w-100">Select Your Meal</button>
+                </div>
+                <div class="accordian-collapse collapse" id="meal" data-bs-parent="#kfc">
+                    <div class="accordian-body">
+                        <div class="row">
+                            <div class="col text-center">
+                                <div class="card">
+                                    <img src="../Public/images/OMG Briyani.png" class="card-img-top">
+                                    <div class="card-header">
+                                        <h2>OMG Biryani</h2>
+                                    </div>
+                                    <div class="card-footer">
+                                        <h2><input id="optBiryani" class="form-check-input" name="meal" type="radio"> &#8377; 120/-</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col text-center">
+                                <div class="card">
+                                    <img src="../Public/images/OMG Burger.png" class="card-img-top">
+                                    <div class="card-header">
+                                        <h2>OMG Burger</h2>
+                                    </div>
+                                    <div class="card-footer">
+                                        <h2><input id="optBurger" class="form-check-input" name="meal" type="radio"> &#8377; 100/-</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="accordian-item">
+            <div class="accordian-header">
+                <button class="btn btn-danger w-100">Select Ad-ON's</button>
+                <div class="accordion-collapse collapse" id="adon" data-bs-parent="#kfc">
+                    <div class="row">
+                        <div class="col text-center">
+                            <div class="card">
+                                <img src="" class="card-img-top">
+                                <div class="card-header">
+                                    <h2>Hot Wings</h2>
+                                </div>
+                                <div class="card-footer">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <div>
+                            <h2><input type="checkbox"></h2>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
